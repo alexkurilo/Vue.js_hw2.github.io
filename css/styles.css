@@ -1,0 +1,15 @@
+.dropdownmenubutton,.dropdownitem{
+	height: 20px;
+	width: 300px;
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #DCDCDC;
+	padding: 0;
+	margin: 0;
+}
+.leftdropdownmenu{
+	text-align: center;
+}
+.imgcat{
+	width: 300px;
+}
