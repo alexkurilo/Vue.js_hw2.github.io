@@ -21,6 +21,9 @@ var BaseDropdownMenu = ('dropdownmenu', {
     selectoptionhandler: function (event){
       this.$parent.$emit ('menuSelect', event.target.innerHTML.trim() );
     },
+    exitimg: function(){
+      this.$parent.$emit ('mouseLeave')
+    }
   },
   template: `
     <div>
@@ -28,7 +31,7 @@ var BaseDropdownMenu = ('dropdownmenu', {
         Change cats
       </button>
       <div class= "leftdropdownmenu">
-        <div class="dropdownitem" v-if = "visiblestatus" v-for = "item in options" @mouseenter = "selectoptionhandler">
+        <div class="dropdownitem" v-if = "visiblestatus" v-for = "item in options" @mouseenter = "selectoptionhandler" @mouseleave = "exitimg">
           {{item}}
         </div>
 

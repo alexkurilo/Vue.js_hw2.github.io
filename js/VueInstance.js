@@ -14,4 +14,7 @@ application.$on ( 'menuSelect', function ( arg ) {
     this.currenttext = this.optiontext [ arg ];
 })
 
+application.$on ( 'mouseLeave', function ( ) {
+    this.currenttext = "";
+})
 
